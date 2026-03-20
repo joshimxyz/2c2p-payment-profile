@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ddd;
+  --foreground: #293a52;
+
+  --saved-card-active-border: #0088FF;
+  --saved-card-name-fg: #293a52;
+  --saved-card-number-fg: #5b6167;
+  --saved-card-bank-fg: #5b6167;
+  --saved-card-expiry-fg: #8c1943;
 }
 
 @theme inline {
+  --font-poppins: var(--font-poppins);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-saved-card-name-fg: var(--saved-card-name-fg);
+  --color-saved-card-number-fg: var(--saved-card-number-fg);
+  --color-saved-card-bank-fg: var(--saved-card-bank-fg);
+  --color-saved-card-expiry-fg: var(--saved-card-expiry-fg);
+  --color-saved-card-active-border: var(--saved-card-active-border);
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
 }
