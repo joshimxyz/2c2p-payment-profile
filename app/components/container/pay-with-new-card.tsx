@@ -9,14 +9,14 @@ import VerifyWithMobile from "../verify-with-mobile";
 import SelectPaymentType from "../select-payment-type";
 
 import { useAuth } from "@/app/context/AuthContext";
-import { CardData } from "@/app/types/payment"; // Adjust path as needed
+import { Card } from "@/app/types";
 
 interface PayWithNewCardProps {
   isRememberChecked: boolean;
   onClickViewAll: () => void;
   setPaymentReady: (ready: boolean) => void;
   setOpenLoginModal: (open: boolean) => void;
-  onCardDataChange: (data: CardData | null) => void;
+  onCardDataChange: (data: Card | null) => void;
   onRememberChange: (checked: boolean) => void;
 }
 
